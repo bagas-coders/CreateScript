@@ -1,146 +1,67 @@
 #!/usr/bin/python
-mess = """======================================================
-             Deface Script Creator        
-                        ./Bagas.
-======================================================"""
+mess = """[+]======================================================[+]
+[+]                Script Deface Creator                 [+]
+[+]                 <> By ./Bagass. </>                  [+]
+[+]======================================================[+]"""
 print mess
-print "Created by ./BagasCoders"
-title = raw_input("Judul title: ")
-alertmessage = raw_input("Pesan nya: ")
-bgimage = raw_input("link gambar (background): ")
-hacked = raw_input("Hacked By: ")
-team = raw_input("Team: ")
-message = raw_input("Pesan. gunakan kode <br> untuk text selanjutnya! : ")
-thanks = raw_input("Thanks To: ")
-soundcloudid = raw_input("soundcloud id (MUSIK): ")
-
-
+print "[+] Created by ./BagasCoders [+]"
+print "[+] Version : 1.5            [+]"
+title =        raw_input("[+] Judul title             : ")
+print "Link gambar tengah/logo jpg, png, jpeg, gif,"
+print "(kalo gapunya bikin abis tu upload di https://up.top4top.net )"
+gambartengah = raw_input("[+] Link gambar tengah/logo : ")
+print "Ukuran gambar/logo (biasanya 400-500an tapi suka2 kalian aja dah"
+ukurangambar = raw_input("[+] Ukuran gambar/logo      : ")
+print "Note khusus warna warna an pake bahasa inggris ya"
+warnaheked = raw_input  ("[+] Warna Hacked By         : ")
+print "Ukuran font mek jangan gede gede nanti jelek kek muka lu awikwok:v"
+hackedby = raw_input    ("[+] Hacked By?              : ")
+print "Warna text biar ngeri ya nggak?:v"
+warnateks = raw_input   ("[+] Warna text              : ")
+print "Gunakan <br> untuk mengganti baris"
+kata = raw_input        ("[+] Kata-kata               : ")
+greets = raw_input      ("[+] Thanks To?              : ")
+print "Kalo mau upload music di https://up.top4top.net"
+musiclink = raw_input   ("[+] Music Link??            : ")
 #Open the index
-fo = open("script.html","w")
+fo = open("index.html","w")
 
-messagescript1 = """<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-     <meta charset="utf-8">
+messagescript1 = """<html>
+    <link href="http://fonts.googleapis.com/css?family=New Rocker" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=0.75, shrink-to-fit=no">
-    <meta name="description" content="I Am Sadd Boy">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Mali:400i,700i" rel="stylesheet" type="text/css">
-    <link rel="icon" href="https://images4.alphacoders.com/220/220444.jpg" type="image/jpg">
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css' integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' crossorigin='anonymous'><title>"""
-
-messagescript2 = title
-
-messagescript3 = """</title></head>"""
-
-messagescript4 = """<body><script>alert('"""
-
-messagescript5 = alertmessage
-
-messagescript6 = """')</script>"""
-
-messagescript7 = """<style>
-    	html,body,.container{
-    		background: url("""
-
-messagescript8 = bgimage 
-
-messagescript9 = """) no-repeat center center/cover;
-    		position: fixed;
-    		margin: auto;
-    		height: 100%;
-    		top: 0; bottom: 0; left: 0; right:0;
-    	}
-    	.page{
-    		position: absolute;
-    		margin: auto;
-    		height: 50%;
-    		top: 0; bottom: 0; left: 0; right:0;
-    	}
-    	.mek{
-    		background-color:rgba(0,0,0,0.7);
-    	}
-    	h1{
-    		transform:rotate(-12deg); 
-    		-moz-transform:rotate(-12deg); 
-    		-webkit-transform:rotate(-12deg); 
-    		-o-transform:rotate(-12deg);
-    		font-family: "Mali";
-    		font-size: 2em;
-    		font-weight: bold;
-    		margin-bottom: 15%;
-    	}
-    	h5{
-    		font-family: "Mali";
-    	}
-    	.logo{
-    		text-decoration: none;
-    		color: white;
-    		font-size: 22px;
-    		margin: 10px;
-    	}
-    	.logo:hover{
-    		text-decoration: none;
-    		color: white;
-    		cursor: pointer;
-    	}
-    	.hastag{
-    		text-decoration: none;
-    		color: white;
-    	}
-    </style>
-  </head>
-  <body>
-  	
-    <div class="container">"""
-
-messagescript10 = """       <div class="page">
-<h1 class="text-center text-white">"""
-
-messagescript11 = hacked
-
-messagescript12 = """</h1>"""
-
-messagescript13 = """<div class="mek">
-    		<h5 class="text-center text-white mb-3"><hr>"""
-
-messagescript14 = message 
-
-messagescript15 = """</div><marquee class="mr-5 ml-5"><a class="hastag" href="#">"""
-
-messagescript16 = thanks
-
-messagescript17 = """</a></marquee></h5>
-    		<center>
-    		<a class="logo" href="">
-    			<i class="fab fa-whatsapp"></i>
-    		</a>
-    		<a class="logo" href="">
-    			<i class="fab fa-hackerrank"></i>
-    		</a>
-    		<a class="logo" href="">
-    			<i class="fab fa-github"></i>
-    		</a>
-    		<a class="logo" href="">
-    			<i class="fas fa-globe"></i>
-    		</a>
-    		<a class="logo" href="">
-    			<i class="fab fa-blogger"></i>
-    		</a>
-    		</center>
-    	</div>
-    </div>
-"""
-
-messagescript18 = """<iframe width="0" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://api.soundcloud.com/tracks/"""
-
-messagescript19 = soundcloudid
-
-messagescript20 = """/stream?client_id=a3e059563d7fd3372b49b37f00a00bcf" ></iframe>
-  </body>
-  </html>"""
-
+    <meta property="og:image" content='"""
+messagescript2 = gambartengah 
+messagescript3 = """'>
+    <meta property="og:description" content="#IndoesianDefacerRuler">
+    <meta property="og:site_name" content="#IndonesianHackerRuler">
+    <link rel="icon" type="image/png" href='"""
+messagescript4 = gambartengah 
+messagescript5 = """'><html><head><title>"""
+messagescript6 = title 
+messagescript7 ="""</title><br><br><br><br><center><img src='"""
+messagescript8 = gambartengah 
+messagescript9 = """'width='"""
+messagescript10 = ukurangambar
+messagescript11 = """'>
+<body bgcolor="black">
+<script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+<br><br><center><font face='Courier New' size='4' color='"""
+messagescript12 = warnaheked 
+messagescript13 = """'>Hacked By"""
+messagescript14 = hackedby
+messagescript15 = """<br><font face='Courier New' size='5px' color='"""
+messagescript16 = warnateks
+messagescript17 = """'>"""
+messagescript18 = kata
+messagescript19 = """</font></center>"""
+messagescript20 = """<br>"""
+messagescript21 = """<center><font face="Courier New" size="5" color="white"> -::GREETS::- <br><br>
+        <marquee scrollamount="10">"""
+messagescript22 = greets
+messagescript23 = """</marquee>
+<center><audio src='"""
+messagescript24 = musiclink
+messagescript25 = """' controls></audio><br><br><center><font face="Courier New" color="red" size="5" >#<font face="Courier New" color="white" size="5" >IndonesianDefacerRulers</center><hr color="red"></hr></html>"""
 
 fo.write(messagescript1)
 fo.write(messagescript2)
@@ -162,9 +83,12 @@ fo.write(messagescript17)
 fo.write(messagescript18)
 fo.write(messagescript19)
 fo.write(messagescript20)
+fo.write(messagescript21)
+fo.write(messagescript22)
+fo.write(messagescript23)
+fo.write(messagescript24)
+fo.write(messagescript25)
 
 print "Script Jadi Tinggal Pindahin"
- 
-print "Kontak? : +6282228270627"
 
-fo.close()
+print "Cara memindahkan $ mv index.html /sdcard"
